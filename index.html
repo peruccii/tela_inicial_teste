@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>AMEL</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <img src="/logo-removebg-preview.png" alt="">
+      <span class="logo_name">ZeroWaste</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="#">
+          <i class='bx bx-grid-alt' ></i>
+          <span class="link_name">....</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">...</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-collection' ></i>
+            <span class="link_name">...</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">...</a></li>
+          <li><a href="#">...... ...</a></li>
+          <li><a href="#">...</a></li>
+          <li><a href="#">... ......</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">...</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">...</a></li>
+          <li><a href="#">... ...</a></li>
+          <li><a href="#">... ...</a></li>
+          <li><a href="#">... ...</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-pie-chart-alt-2' ></i>
+          <span class="link_name">...</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">...</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-line-chart' ></i>
+          <span class="link_name">...</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">...</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-plug' ></i>
+            <span class="link_name">...</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">...</a></li>
+          <li><a href="#">... ...</a></li>
+          <li><a href="#">...</a></li>
+          <li><a href="#">... ...</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-compass' ></i>
+          <span class="link_name">...</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">...</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-history'></i>
+          <span class="link_name">...</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">...</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-cog' ></i>
+          <span class="link_name">...</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">...</a></li>
+        </ul>
+   
+
+     
+        
+    <div class="profile-details">
+        
+      <div class="profile-content">
+        <img src="/iStock-648229868-1024x909.jpg" alt="profileImg">
+      </div>
+      <div class="name-job">
+        <div class="profile_name">Prem Shahi</div>
+        <div class="job">Web Desginer</div>
+      </div>
+      <i class='bx bx-log-out' ></i>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' > </i>
+  </div>
+    <div class="circle"></div>
+    <div class="content">
+      <div class="textBox">
+        <h2>Its not just Coffe<br>Its <span>ZeroWaste</span></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labo
+           velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+           sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a href="#">Saiba mais</a>
+      </div>
+      <div class="imgBox">
+        <img src="seilaaaaaa_create_a_recyclable_trash_can_with_the_recycling_log_5eaa6c79-3e8e-4495-a176-64e97d9f58a8-removebg-preview.png" class="starbucks">
+      </div>
+    </div>
+    
+            
+   
+  </section>
+
+  
+
+
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+</body>
+</html>
